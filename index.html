@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        #div1 {
+            display: flex;
+            flex-direction: column;
+        }
+        #div2 {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        #Start {
+            align-self: center;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            font-size: 50px;
+            font-weight: 800;
+            background-color: rgb(5, 253, 5);
+            border-radius: 20px;
+            border: none;
+        }
+        #next-btn {
+            align-self: center;
+            padding-inline: 2rem;
+            padding-block: 1rem;
+            font-size: 50px;
+            font-weight: 800;
+            background-color: rgb(5, 253, 5);
+            border-radius: 20px;
+            border: none;
+        }
+        button:hover {
+            cursor: pointer;
+            transform: scale(1.01);
+        }
+        .start-btn-hide {
+            display: none;
+        }
+        #submit-btn {
+            align-self: center;
+            padding-inline: 0.5rem;
+            padding-block: 0.3rem;
+            font-size: 20px;
+            font-weight: 800;
+            background-color: rgb(5, 253, 5);
+            border-radius: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guessing The Number</h1>
+    <div id="div1">
+        <button id="Start">Start</button>
+    </div>
+    <div id="div2">
+        <form>
+            <input type="number" name="number" id="number">
+            <button id="submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
